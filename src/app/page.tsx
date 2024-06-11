@@ -2,6 +2,7 @@ import thirdwebIcon from "@public/thirdweb.svg";
 import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
 import { client } from "./client";
+import Model from "./components/Model";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           />
         </div>
 
-        <ThirdwebResources />
+        <Model />
       </div>
     </main>
   );
